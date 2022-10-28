@@ -44,8 +44,13 @@
     // height: 90px;
     display: flex;
     flex-direction: column;
-
     align-items: center;
+    background-image: none;
+    background: radial-gradient(#a4508b, #5f0a87);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 
     &__title {
       text-align: center;
