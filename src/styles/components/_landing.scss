@@ -1,0 +1,70 @@
+.landing__home {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  color: papayawhip;
+  font-size: 1.8rem;
+}
+
+.landing {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../../image/party.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+  &__service {
+    display: flex;
+
+    & img {
+      width: 250px;
+      margin-left: 50px;
+      border: 2px solid grey;
+      border-radius: 10px;
+    }
+  }
+
+  &__phone {
+    display: flex;
+
+    & img {
+      margin-right: 100px;
+      width: 270px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .landing {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+
+    &__service {
+      display: flex;
+      flex-direction: column;
+
+      & img {
+        margin-left: 0;
+        margin-top: 20px;
+      }
+    }
+
+    &__phone {
+      display: flex;
+
+      & img {
+        margin-right: 0;
+        width: 170px;
+      }
+    }
+  }
+  .landing__home {
+    display: none;
+  }
+}

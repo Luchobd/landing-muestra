@@ -1,0 +1,58 @@
+// pantallas desktop
+.footer {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  background-image: url(../../image/purple.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-weight: bold;
+  color: #fff;
+
+  & a {
+    color: white;
+    font-weight: normal;
+  }
+
+  &__subtitle,
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  &__subtitle {
+    &_icon {
+      display: flex;
+      justify-content: space-evenly;
+      font-size: 22px;
+    }
+  }
+
+  &__contacto {
+    border-left: 1px solid #00000050;
+    padding-left: 80px;
+  }
+}
+
+// Pantallas como table
+@media (max-width: 960px) {
+  .footer {
+    // height: 90px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    &__title {
+      text-align: center;
+    }
+
+    &__subtitle_icon {
+      margin-top: 15px;
+    }
+  }
+}
